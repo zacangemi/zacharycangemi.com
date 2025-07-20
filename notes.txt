@@ -1,0 +1,91 @@
+
+NOTE: 
+
+be very careful CAREFUL with icon use
+
+- details for skill page
+ <div class="test">
+        <p>Python: Scripting, Pandas, Data Science, ETL</p>
+        <p>SQL: PostgreSQL, MySQL</p>
+        <p>Statistics: Conditional Probability, Bayes Theorem, Binomial dist, Normal dist, descriptive stats, law of large numbers, centrl limit theorem, linear regression, log regression</p>
+        <p>KPIs: quantifying digital business goals, short term and long term.</p>
+        <p>Machine Learning: Unsupervised Learning, Supervised Learning, ex. of models you used.</p>
+        <p>A/B Testing</p>
+        <p>Data Viz: matplotlib</p>
+        <p>Fontend: CSS, HTML, JS</p>
+</div>
+
+Image set: flaticon
+
+1) KPI:
+kpi: https://www.flaticon.com/premium-icon/kpi_4680226?term=kpi&page=1&position=7&page=1&position=7&related_id=4680226&origin=tag
+kpi_2: https://www.flaticon.com/free-icon/analytics_777418?term=metric&page=1&position=36&page=1&position=36&related_id=777418&origin=search
+
+
+2) Frontend
+- HTML:
+https://www.flaticon.com/free-icon/html-5_174854?term=html&page=1&position=4&page=1&position=4&related_id=174854&origin=search
+
+- CSS:
+https://www.flaticon.com/free-icon/css-3_732190?term=css&page=1&position=1&page=1&position=1&related_id=732190&origin=search
+
+- JS:
+https://www.flaticon.com/free-icon/js_5968292?term=css&page=1&position=9&page=1&position=9&related_id=5968292&origin=search
+
+- all three together
+fe_1: https://www.flaticon.com/free-icon/folder_524541?term=js%20html%20css&page=1&position=10&page=1&position=10&related_id=524541&origin=search
+fe_2: https://www.flaticon.com/free-icon/file_412499?term=js%20html%20css&page=1&position=16&page=1&position=16&related_id=412499&origin=search
+fe_3: https://www.flaticon.com/premium-icon/coding_2085263?related_id=2085263&origin=search
+
+3) DB:
+db_1: https://www.flaticon.com/premium-icon/database_4248443?term=database&related_id=4248443
+db_2: https://www.flaticon.com/free-icon/database-storage_2906274?term=database&related_id=2906274
+
+4) Python:
+https://www.flaticon.com/free-icon/python_5968350?term=python&page=1&position=6&page=1&position=6&related_id=5968350&origin=search
+
+5) A/B Testing: 
+https://www.flaticon.com/free-icon/ab-testing_5072934?related_id=5072934&origin=search
+
+ab_testing2: https://www.flaticon.com/free-icon/compare_5497153?term=split%20testing&related_id=5497153
+ab_testing3: https://www.flaticon.com/premium-icon/ab-testing_4516974?related_id=4516974
+
+6) Stats:
+https://www.flaticon.com/free-icon/linear-regression_2103640?related_id=2103640&origin=search
+
+7) ML:
+ml_1: https://www.flaticon.com/free-icon/neural_2103658?term=machine%20learning&page=1&position=36&page=1&position=36&related_id=2103658&origin=search
+
+8) Data Viz:
+dataviz_1: https://www.flaticon.com/free-icon/data-visualization_6332308?term=data%20visualization&page=1&position=46&page=1&position=46&related_id=6332308&origin=search
+dataviz_2: https://www.flaticon.com/free-icon/monitoring_3703299?related_id=3703299
+dataviz_3: https://www.flaticon.com/free-icon/dashboard_2782066?related_id=2782066&origin=search
+
+
+blackrock holdings for new ETF: 
+- coinbase; 13.20%
+- USD Cash; 13%
+- Block; 11.40%
+- MARA; 11.13
+- RIOT; 10.50%
+- CAN; 4.69%
+- GLXY; 4.53
+- PYPL; 4.27;
+- IBM; 4.10;
+- NVDA; 3.98
+- AMD; 3.64
+- CORZ; 3.17
+- HUT; 2.93;
+- HIVE; 2.92
+- BITF; 1.89
+- ARB; 1.85
+- IREN; 1.59
+- CLSK; 1.31
+- BKKT; 1.30
+- APLD; 1.14
+- BTBT; 0.94;
+- HOOD; 0.56
+- SI; 0.32 
+- AMBA; 0.29%
+- 
+

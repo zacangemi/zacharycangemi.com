@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1" />
+	<meta http-equiv="X-UA-Compatible" content="ie=edge" />
+	<link rel = "stylesheet" href = "css/style.css" />
+	<link rel="icon" type= "image/gif" href="css/images/surfboards/surfer_mirrored.gif" />
+	<script src="https://kit.fontawesome.com/f244474c5e.js" crossorigin="anonymous"></script>
+	<title>Zachary Cangemi | Data Scientist</title> 
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+    
+    <script>
+    function submitToAPI(e) {
+       e.preventDefault();
+       
+       var name = $("#form-name").val();
+       var email = $("#form-email").val();
+       var subject = $("#form-subject").val();
+       var message = $("#form-message").val();
+       
+       var data = {
+          name : name,
+          email : email,
+          subject: subject,
+          message: message
+        };
+
+       $.ajax({
+         type: "POST",
+         url : "https://4sva3lxlpb.execute-api.us-east-1.amazonaws.com/prod/contact-us",
+         dataType: "json",
+         crossDomain: "true",
+         contentType: "application/json; charset=utf-8",
+         data: JSON.stringify(data),
+
+         
+         success: function () {
+           // clear form and show a success message
+           alert("Successfull");
+           document.getElementById("contact-form").reset();
+       location.reload();
+         },
+         error: function () {
+           // show an error message
+           alert("Unsuccessfull");
+         }});
+    
+    }
+
+    </script>
+</head>
+<body>
+
+    <h1 class="contactHeader">Contact</h1>
+    
+    <nav>
+      <ul class="nav__list">
+        <li class="home"><a class="nav__links" href="index.html">Home</a></li>
+        <p>·</p>
+        <li class="skills"><a class="nav__links" href="skills.html">Skills</a></li>
+        <p>·</p>
+        <li class="about"><a class="nav__links" href="about.html">About</a></li>
+        <p>·</p>
+        <li class="blog"><a class="nav__links" href="blog.html">Blog</a></li>
+        <p>·</p>
+        <li class="portfolio"><a class="nav__links" href="portfolio.html">Portfolio</a></li>
+        <p>·</p>
+        <li class="contact"><a class="nav__links" href="contact.html">Contact</a></li>
+      </ul>
+    </nav>
+
+	<div class="contact__container">
+		
+    <form id="contact-form" class="contact__form" method="POST" >
+			<input id="form-name" class="user_name" type="text" name="readername" placeholder="Name" required>
+			<input id="form-email" class="user_email" type="email" name="email" placeholder="Email Address" required>
+			<input id="form-subject" class="user_subject" type="text" name="readername" placeholder="Subject" required>
+			<textarea id="form-message" class="user_message" type="text" name="message" rows="10" cols="30" placeholder="Message" required></textarea>
+			<button class="bttn" type="submit" onClick="submitToAPI(event)">Send</button>
+			
+			<div class="social">
+				<ul>
+					<li>
+						<a class="social__link" href="https://www.linkedin.com/in/zachary-cangemi-0a08b4b1/" target="linkedin_window">
+							<img src="css/images/socials/linkedin.png" alt="linkedin" />
+							<span>LinkedIn</span>
+						</a>
+					</li>
+					<li>
+						<a class="social__link" href="https://github.com/zacangemi" target="github_window">
+							<img src="css/images/socials/github.png" alt="github" />
+							<span>GitHub</span>
+						</a>
+					</li>
+					<li>
+						<a class="social__link" href="css/images/socials/zachary_cangemi_resume.pdf" target="resume_window">
+							<img src="css/images/socials/arrow.png" alt="resume" />
+							<span>Resume</span>
+						</a>
+					</li>
+				</ul> 
+			</div>
+		</form>
+	</div>
+
+</body>
+</html>
+
