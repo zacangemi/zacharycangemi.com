@@ -25,8 +25,8 @@
         font-weight: 1;
         color: black;
         text-align: center;
-        font-size: 90px;
-        margin-top: 15px;
+        font-size: 75px;
+        margin-top: 10px;
     }
 
     /* Home Page */
@@ -373,8 +373,8 @@
         align-items: center;
         background-color: transparent;
         max-width: 700px;
-        margin: 40px auto 60px;
-        padding: 40px 20px;
+        margin: 25px auto 30px;
+        padding: 20px 20px;
     }
         
 
@@ -383,7 +383,7 @@
         flex-direction: column;
         justify-content: center;
         align-items: center;
-        gap: 25px;
+        gap: 15px;
         width: 100%;
     }
 
@@ -415,7 +415,7 @@
     }
 
     .user_message {
-        min-height: 120px;
+        min-height: 80px;
         font-family: 'VT323';
     }
 
