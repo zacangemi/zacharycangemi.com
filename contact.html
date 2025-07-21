@@ -8,47 +8,6 @@
 	<link rel="icon" type= "image/gif" href="css/images/surfboards/surfer_mirrored.gif" />
 	<script src="https://kit.fontawesome.com/f244474c5e.js" crossorigin="anonymous"></script>
 	<title>Zachary Cangemi | Data Scientist</title> 
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
-    
-    <script>
-    function submitToAPI(e) {
-       e.preventDefault();
-       
-       var name = $("#form-name").val();
-       var email = $("#form-email").val();
-       var subject = $("#form-subject").val();
-       var message = $("#form-message").val();
-       
-       var data = {
-          name : name,
-          email : email,
-          subject: subject,
-          message: message
-        };
-
-       $.ajax({
-         type: "POST",
-         url : "https://4sva3lxlpb.execute-api.us-east-1.amazonaws.com/prod/contact-us",
-         dataType: "json",
-         crossDomain: "true",
-         contentType: "application/json; charset=utf-8",
-         data: JSON.stringify(data),
-
-         
-         success: function () {
-           // clear form and show a success message
-           alert("Successfull");
-           document.getElementById("contact-form").reset();
-       location.reload();
-         },
-         error: function () {
-           // show an error message
-           alert("Unsuccessfull");
-         }});
-    
-    }
-
-    </script>
 </head>
 <body>
 
@@ -72,12 +31,12 @@
 
 	<div class="contact__container">
 		
-    <form id="contact-form" class="contact__form" method="POST" >
-			<input id="form-name" class="user_name" type="text" name="readername" placeholder="Name" required>
-			<input id="form-email" class="user_email" type="email" name="email" placeholder="Email Address" required>
-			<input id="form-subject" class="user_subject" type="text" name="readername" placeholder="Subject" required>
-			<textarea id="form-message" class="user_message" type="text" name="message" rows="10" cols="30" placeholder="Message" required></textarea>
-			<button class="bttn" type="submit" onClick="submitToAPI(event)">Send</button>
+    <form id="contact-form" class="contact__form" method="POST" action="https://formspree.io/f/myzpkrzk">
+			<input class="user_name" type="text" name="name" placeholder="Name" required>
+			<input class="user_email" type="email" name="email" placeholder="Email Address" required>
+			<input class="user_subject" type="text" name="subject" placeholder="Subject" required>
+			<textarea class="user_message" name="message" rows="10" cols="30" placeholder="Message" required></textarea>
+			<button class="bttn" type="submit">Send</button>
 			
 			<div class="social">
 				<ul>
