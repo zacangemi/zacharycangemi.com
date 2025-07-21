@@ -133,12 +133,12 @@
         display: flex;
         justify-content: center;
         align-items: center;
-        margin: 20px auto 30px;
+        margin: 15px auto 20px;
     }
 
     .surfboard__about img {
         max-width: 350px;
-        max-height: 150px;
+        max-height: 100px;
         width: 60%;
         display: block;
     }
@@ -149,8 +149,8 @@
         align-items: center;
         justify-content: center;
         background-color: #f8f8f8;
-        margin: 20px auto 40px;
-        padding: 30px;
+        margin: 15px auto 25px;
+        padding: 20px;
         border: 2px dashed #ccc;
         border-radius: 10px;
         max-width: 1100px;
@@ -159,7 +159,7 @@
 
     .about__container p {
         max-width: 1000px;
-        margin-bottom: 25px;
+        margin-bottom: 18px;
         text-align: center;
         font-family: 'VT323';
         font-size: 24px;
