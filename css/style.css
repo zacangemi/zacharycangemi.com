@@ -461,11 +461,11 @@
 
     .nav__list  {
         margin-bottom: 40px;
-        gap: 4px;
+        gap: 2px;
     }
 
     .nav__links { 
-        font-size: 25px;
+        font-size: 18px;
     }
 
     /* disables the hover effect on the resume link - no color change */
