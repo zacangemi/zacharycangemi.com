@@ -448,6 +448,29 @@
         box-shadow: 0 2px 6px rgba(57, 179, 213, 0.4);
     }
 
+    /* Success message styling */
+    .success-message {
+        background-color: #d4edda;
+        border: 2px solid #c3e6cb;
+        border-radius: 8px;
+        padding: 15px;
+        margin: 20px 0;
+        text-align: center;
+        animation: fadeIn 0.5s ease-in-out;
+    }
+
+    .success-message p {
+        font-family: 'VT323';
+        font-size: 20px;
+        color: #155724;
+        margin: 0;
+    }
+
+    @keyframes fadeIn {
+        from { opacity: 0; transform: translateY(-10px); }
+        to { opacity: 1; transform: translateY(0); }
+    }
+
 
 
 
