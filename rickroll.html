@@ -62,4 +62,25 @@
     </video>
     <div class="copyright">Video: "Never Gonna Give You Up" by Rick Astley © 1987 RCA Records</div>
 </body>
+<script>
+    document.addEventListener('DOMContentLoaded', function() {
+        const video = document.querySelector('video');
+        
+        function isMobileDevice() {
+            return /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent) ||
+                   (navigator.maxTouchPoints && navigator.maxTouchPoints > 2 && /MacIntel/.test(navigator.platform));
+        }
+        
+        if (isMobileDevice()) {
+            video.muted = true;
+            video.playsInline = true;
+            
+            video.play().catch(function(error) {
+                console.log('Video autoplay failed:', error);
+            });
+        } else {
+            video.muted = false;
+        }
+    });
+</script>
 </html>

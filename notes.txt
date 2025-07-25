@@ -2,8 +2,8 @@
 
 finish line notes:
 
-1) fix up contact form message send 
+1) fix up contact form message send: COMPLETE
 2) clouds on contact page 
-3) why does the video not autoplay on safari but it does on chrome
+3) why does the video not autoplay on safari but it does on chrome: COMPLETE 
+        - screen size issue on mobile, mobile device does not do autoplay with sound on! 
 4) blog
-5) 
