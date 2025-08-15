@@ -47,7 +47,17 @@
         // Function to truncate text to specified length
         function truncateText(text, maxLength = 280) {
             if (text.length <= maxLength) return text;
-            return text.substr(0, maxLength).trim() + '...';
+            
+            // Find the last space within the limit to avoid cutting words
+            let truncated = text.substr(0, maxLength);
+            let lastSpace = truncated.lastIndexOf(' ');
+            
+            // If no space found or very close to start, just cut at limit
+            if (lastSpace < maxLength * 0.8) {
+                return truncated.trim() + '...';
+            }
+            
+            return truncated.substr(0, lastSpace).trim() + '...';
         }
         
         // Function to format date
