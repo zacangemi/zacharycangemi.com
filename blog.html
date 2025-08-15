@@ -32,15 +32,90 @@
     <div class="blog__container">
         <p class="blog__intro">Welcome to my thoughts and insights on AI, data science, and life.</p>
         
-        <div class="blog__posts">
-            <!-- Blog posts will be added here -->
-            <article class="blog__post">
-                <h2 class="blog__post-title">Coming Soon...</h2>
-                <p class="blog__post-date">Stay tuned for my first blog post!</p>
-                <p class="blog__post-excerpt">I'm currently working on some exciting content about AI research, data science insights, and my journey in the tech world.</p>
-            </article>
+        <div class="blog__posts" id="blog-posts-container">
+            <!-- Blog posts will be loaded automatically from wordpress -->
+             <div id="loading-message">
+                <p>Loading latest posts ...</p>
+             </div>
         </div>
     </div>
 
+    <script>
+        // WordPress API endpoint for your blog
+        const WORDPRESS_API_URL = 'https://public-api.wordpress.com/rest/v1.1/sites/blog.zacharycangemi.com/posts/';
+        
+        // Function to truncate text to specified length
+        function truncateText(text, maxLength = 150) {
+            if (text.length <= maxLength) return text;
+            return text.substr(0, maxLength).trim() + '...';
+        }
+        
+        // Function to format date
+        function formatDate(dateString) {
+            const date = new Date(dateString);
+            return date.toLocaleDateString('en-US', { 
+                year: 'numeric', 
+                month: 'long', 
+                day: 'numeric' 
+            });
+        }
+        
+        // Function to strip HTML tags from content
+        function stripHtml(html) {
+            const temp = document.createElement('div');
+            temp.innerHTML = html;
+            return temp.textContent || temp.innerText || '';
+        }
+        
+        // Function to create a blog post card
+        function createBlogCard(post) {
+            const excerpt = truncateText(stripHtml(post.content));
+            const formattedDate = formatDate(post.date);
+            
+            return `
+                <article class="blog__post" onclick="window.open('${post.URL}', '_blank')">
+                    <h2 class="blog__post-title">${post.title}</h2>
+                    <p class="blog__post-date">${formattedDate}</p>
+                    <p class="blog__post-cta">Click to read the full post on my blog →</p>
+                    <p class="blog__post-excerpt">${excerpt}</p>
+                </article>
+            `;
+        }
+        
+        // Function to load blog posts from WordPress
+        async function loadBlogPosts() {
+            try {
+                const response = await fetch(WORDPRESS_API_URL);
+                if (!response.ok) {
+                    throw new Error('Failed to fetch posts');
+                }
+                
+                const data = await response.json();
+                const posts = data.posts;
+                
+                const container = document.getElementById('blog-posts-container');
+                const loadingMessage = document.getElementById('loading-message');
+                
+                if (posts && posts.length > 0) {
+                    // Remove loading message
+                    loadingMessage.remove();
+                    
+                    // Create blog cards
+                    const blogCards = posts.map(post => createBlogCard(post)).join('');
+                    container.innerHTML = blogCards;
+                } else {
+                    loadingMessage.innerHTML = '<p>No posts found. Check back soon!</p>';
+                }
+                
+            } catch (error) {
+                console.error('Error loading blog posts:', error);
+                const loadingMessage = document.getElementById('loading-message');
+                loadingMessage.innerHTML = '<p>Unable to load posts. Please try again later.</p>';
+            }
+        }
+        
+        // Load posts when page loads
+        document.addEventListener('DOMContentLoaded', loadBlogPosts);
+    </script>
 </body>
 </html>
