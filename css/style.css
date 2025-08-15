@@ -362,7 +362,7 @@
         font-family: 'VT323';
         font-size: 22px;
         color: black;
-        line-height: 1.4;
+        line-height: 1.2;
     }
 
     /* Contact Page */
@@ -651,6 +651,7 @@
 
     .blog__post-excerpt {
         font-size: 20px;
+        line-height: 1.2;
     }
 
 /* end of mobile device */
