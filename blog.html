@@ -45,7 +45,7 @@
         const WORDPRESS_API_URL = 'https://public-api.wordpress.com/rest/v1.1/sites/blog.zacharycangemi.com/posts/';
         
         // Function to truncate text to specified length
-        function truncateText(text, maxLength = 150) {
+        function truncateText(text, maxLength = 200) {
             if (text.length <= maxLength) return text;
             return text.substr(0, maxLength).trim() + '...';
         }
@@ -76,7 +76,6 @@
                 <article class="blog__post" onclick="window.open('${post.URL}', '_blank')">
                     <h2 class="blog__post-title">${post.title}</h2>
                     <p class="blog__post-date">${formattedDate}</p>
-                    <p class="blog__post-cta">Click to read the full post on my blog →</p>
                     <p class="blog__post-excerpt">${excerpt}</p>
                 </article>
             `;
