@@ -242,7 +242,7 @@
         height: 100%;
         display: flex;
         flex-direction: column;
-        justify-content: space-between;
+        justify-content: flex-start;
         transition: all 0.3s ease;
     }
 
@@ -265,7 +265,7 @@
         flex-grow: 1;
         display: flex;
         flex-direction: column;
-        justify-content: space-between;
+        justify-content: flex-start;
     }
 
     .categories {
