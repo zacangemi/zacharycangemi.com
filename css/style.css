@@ -314,15 +314,6 @@
         margin: 40px 20px;
     }
 
-    .blog__intro {
-        font-family: 'VT323';
-        font-size: 18px;
-        text-align: center;
-        color: black;
-        margin-bottom: 30px;
-        max-width: 500px;
-    }
-
     .blog__posts {
         display: flex;
         flex-direction: column;
@@ -653,11 +644,6 @@
     /* blog mobile styles */
     .blog__container {
         margin: 20px 10px;
-    }
-
-    .blog__intro {
-        font-size: 16px;
-        margin-bottom: 24px;
     }
 
     .blog__post {
