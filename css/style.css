@@ -339,6 +339,7 @@
         transition: transform 0.2s ease-in-out;
         overflow: hidden;
         word-break: break-word;
+        cursor: pointer;
     }
 
     .blog__post:hover {
