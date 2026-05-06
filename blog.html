@@ -99,13 +99,11 @@
             const formattedDate = formatDate(post.date);
             
             return `
-                <a class="blog__post-link" href="${post.URL}" target="_blank" rel="noopener noreferrer">
-                    <article class="blog__post">
-                        <h2 class="blog__post-title">${post.title}</h2>
-                        <p class="blog__post-date">${formattedDate}</p>
-                        <p class="blog__post-excerpt">${excerpt}</p>
-                    </article>
-                </a>
+                <article class="blog__post" onclick="window.open('${post.URL}', '_blank')">
+                    <h2 class="blog__post-title">${post.title}</h2>
+                    <p class="blog__post-date">${formattedDate}</p>
+                    <p class="blog__post-excerpt">${excerpt}</p>
+                </article>
             `;
         }
         

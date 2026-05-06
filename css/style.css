@@ -331,12 +331,6 @@
         width: 100%;
     }
 
-    .blog__post-link {
-        text-decoration: none;
-        color: inherit;
-        display: block;
-    }
-
     .blog__post {
         background-color: #f0f0f0;
         border: 2px dashed black;
