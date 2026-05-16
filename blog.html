@@ -93,18 +93,34 @@
             return temp.textContent || temp.innerText || '';
         }
         
-        // Function to create a blog post card
+        // Function to create a blog post card.
+        // Uses DOM construction with textContent (not innerHTML) so post fields
+        // from the WordPress API can never be interpreted as HTML/JS — closes
+        // the XSS surface that template-string interpolation would otherwise open.
         function createBlogCard(post) {
-            const excerpt = truncateText(stripHtml(post.content));
-            const formattedDate = formatDate(post.date);
-            
-            return `
-                <article class="blog__post" onclick="window.open('${post.URL}', '_blank')">
-                    <h2 class="blog__post-title">${post.title}</h2>
-                    <p class="blog__post-date">${formattedDate}</p>
-                    <p class="blog__post-excerpt">${excerpt}</p>
-                </article>
-            `;
+            const article = document.createElement('article');
+            article.className = 'blog__post';
+            article.style.cursor = 'pointer';
+            article.addEventListener('click', () => {
+                window.open(post.URL, '_blank', 'noopener,noreferrer');
+            });
+
+            const title = document.createElement('h2');
+            title.className = 'blog__post-title';
+            title.textContent = post.title;
+
+            const date = document.createElement('p');
+            date.className = 'blog__post-date';
+            date.textContent = formatDate(post.date);
+
+            const excerpt = document.createElement('p');
+            excerpt.className = 'blog__post-excerpt';
+            excerpt.textContent = truncateText(stripHtml(post.content));
+
+            article.appendChild(title);
+            article.appendChild(date);
+            article.appendChild(excerpt);
+            return article;
         }
         
         // Function to load blog posts from WordPress
@@ -124,12 +140,11 @@
                 if (posts && posts.length > 0) {
                     // Remove loading message
                     loadingMessage.remove();
-                    
-                    // Create blog cards
-                    const blogCards = posts.map(post => createBlogCard(post)).join('');
-                    container.innerHTML = blogCards;
+
+                    // Append each card as a real DOM node (no innerHTML, no string injection)
+                    posts.forEach(post => container.appendChild(createBlogCard(post)));
                 } else {
-                    loadingMessage.innerHTML = '<p>No posts found. Check back soon!</p>';
+                    loadingMessage.textContent = 'No posts found. Check back soon!';
                 }
                 
             } catch (error) {
