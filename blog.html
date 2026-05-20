@@ -92,7 +92,16 @@
             temp.innerHTML = html;
             return temp.textContent || temp.innerText || '';
         }
-        
+
+        // Decode HTML entities (e.g., &#8211; → –, &amp; → &) safely.
+        // Using a textarea ensures the input is treated as text — any HTML
+        // tags inside become literal text content, never executed.
+        function decodeEntities(text) {
+            const textarea = document.createElement('textarea');
+            textarea.innerHTML = text;
+            return textarea.value;
+        }
+
         // Function to create a blog post card.
         // Uses DOM construction with textContent (not innerHTML) so post fields
         // from the WordPress API can never be interpreted as HTML/JS — closes
@@ -107,7 +116,7 @@
 
             const title = document.createElement('h2');
             title.className = 'blog__post-title';
-            title.textContent = post.title;
+            title.textContent = decodeEntities(post.title);
 
             const date = document.createElement('p');
             date.className = 'blog__post-date';
