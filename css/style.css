@@ -193,10 +193,10 @@
         border-radius: 8px;
     }
 
-    .social__link img {
-        width: 28px;
-        height: 28px;
-        margin-bottom: 5px;
+    .social__link i {
+        font-size: 28px;
+        margin-bottom: 8px;
+        color: inherit;
         transition: transform 0.3s ease;
     }
 
@@ -212,7 +212,7 @@
         color: rgb(57, 179, 213);
     }
 
-    .social__link:hover img {
+    .social__link:hover i {
         transform: scale(1.1);
     }
 
@@ -631,9 +631,8 @@
         gap: 20px;
     }
 
-    .social__link img {
-        width: 24px;
-        height: 24px;
+    .social__link i {
+        font-size: 24px;
     }
 
     .social__link span {
@@ -741,9 +740,8 @@
         gap: 22px;
     }
 
-    .social__link img {
-        width: 26px;
-        height: 26px;
+    .social__link i {
+        font-size: 26px;
     }
 
     .social__link span {
