@@ -501,11 +501,6 @@
         font-size: 20px;
     }
 
-    /* disables the hover effect on the resume link - no color change */
-    #resume:hover {
-        background-color: #5c6cac;
-    }
-
     /* home page  */
 
     .surfer__gif {
@@ -666,19 +661,12 @@
         font-size: 16px;
         padding: 16px;
     }
-
+}
 /* end of mobile device */
 
 
 /* tablet devices such as iPad ect. */
 @media screen and (min-width: 768px) and (max-width: 991px) {
-
-    /* universal changes */
-
-    /* disables the hover effect on the resume link - no color change */
-    #resume:hover {
-        background-color: #5c6cac;
-    }
 
     /* portfolio tablet */
     
@@ -728,7 +716,7 @@
     .user_email,
     .user_subject,
     .user_message {
-        max-width: 450px;
+        max-width: 500px;
         font-size: 19px;
     }
 
@@ -793,30 +781,7 @@
         font-size: 19px;
     }
 
-    /* contact page tablet */
-    
-    .contact__container {
-        margin: 0 30px;
-        padding: 30px 20px;
-    }
-
-    .user_name,
-    .user_email,
-    .user_subject,
-    .user_message {
-        max-width: 500px;
-        font-size: 19px;
-    }
-
-    .bttn {
-        font-size: 19px;
-    }
 }
 /* tablet device styling ends here */
 
 
-/* large deskptop and monitor device */
-@media screen and (min-width: 1200px) {
-
-}
-/* large deskptop and monitor device ends here */
