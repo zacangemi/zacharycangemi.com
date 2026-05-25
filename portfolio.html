@@ -6,6 +6,8 @@
 	<meta http-equiv = "X-UA-Compatible" content = "ie=edge" >
 	<meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self' 'unsafe-inline'; style-src 'self' 'unsafe-inline' https://fonts.googleapis.com; font-src 'self' https://fonts.gstatic.com data:; img-src 'self' data:; connect-src 'self' https://formspree.io https://public-api.wordpress.com; form-action 'self' https://formspree.io; base-uri 'self'; upgrade-insecure-requests" />
 	<meta name="referrer" content="strict-origin-when-cross-origin" />
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 	<link rel = "stylesheet" href = "css/style.css" />
 	<link rel="icon" type= "image/gif" href="css/images/surfboards/surfer_mirrored.gif" />
 	<title>Portfolio | Zachary Cangemi</title>
@@ -30,18 +32,18 @@
     
     <header><h1 class="portfolioHeader">Portfolio</h1></header>
 
-    <nav>
+    <nav aria-label="Main navigation">
 		<ul class="nav__list">
 			<li class="home"><a class="nav__links" href="index.html">Home</a></li>
-            <p>·</p>
+            <p aria-hidden="true">·</p>
             <li class="blog"><a class="nav__links" href="blog.html">Blog</a></li>
-			<p>·</p>
+			<p aria-hidden="true">·</p>
             <li class="portfolio"><a class="nav__links" href="portfolio.html">Portfolio</a></li>
-			<p>·</p>
+			<p aria-hidden="true">·</p>
             <li class="about"><a class="nav__links" href="about.html">About</a></li>
-			<p>·</p>
+			<p aria-hidden="true">·</p>
 			<li class="skills"><a class="nav__links" href="skills.html">Skills</a></li>
-	        <p>·</p>
+	        <p aria-hidden="true">·</p>
             <li class="contact"><a class="nav__links" href="contact.html">Contact</a></li>
 		</ul>
 	</nav>

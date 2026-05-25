@@ -1,5 +1,5 @@
-/* import the pixelalted font here  */
-@import url('https://fonts.googleapis.com/css?family=VT323');
+/* import the pixelated font here — display=swap prevents flash of invisible text */
+@import url('https://fonts.googleapis.com/css?family=VT323&display=swap');
 
 * {
     box-sizing: border-box;
@@ -479,6 +479,47 @@
     @keyframes fadeIn {
         from { opacity: 0; transform: translateY(-10px); }
         to { opacity: 1; transform: translateY(0); }
+    }
+
+    /* 404 page */
+    .notfound {
+        text-align: center;
+        margin: 20px 20px 60px 20px;
+        font-family: 'VT323', monospace;
+    }
+
+    .notfound__headline {
+        font-size: 26px;
+        color: black;
+        margin-bottom: 12px;
+    }
+
+    .notfound__hint {
+        font-size: 18px;
+        color: black;
+        margin-bottom: 14px;
+    }
+
+    .notfound__links {
+        display: flex;
+        justify-content: center;
+        gap: 24px;
+        list-style: none;
+        padding: 0;
+        margin: 0;
+        flex-wrap: wrap;
+    }
+
+    .notfound__links a {
+        font-size: 20px;
+        color: rgb(57, 179, 213);
+        text-decoration: none;
+        transition: transform 0.18s ease-in-out;
+        display: inline-block;
+    }
+
+    .notfound__links a:hover {
+        transform: translateY(-2px);
     }
 
 
