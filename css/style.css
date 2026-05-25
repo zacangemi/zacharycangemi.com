@@ -535,7 +535,8 @@
 
     .nav__list  {
         margin-bottom: 40px;
-        gap: 2px;
+        gap: 4px 2px;
+        flex-wrap: wrap;
     }
 
     .nav__links { 
@@ -824,5 +825,29 @@
 
 }
 /* tablet device styling ends here */
+
+
+/* large desktop / monitor — modest scaling for screens above 1200px */
+@media screen and (min-width: 1200px) {
+
+    .nameHeader, .aboutHeader, .skillsHeader,
+    .blogHeader, .portfolioHeader, .contactHeader {
+        font-size: 90px;
+    }
+
+    .nav__links {
+        font-size: 26px;
+    }
+
+    .about__container p {
+        font-size: 26px;
+    }
+
+    .project-card__name {
+        font-size: 24px;
+    }
+
+}
+/* large desktop styling ends here */
 
 
