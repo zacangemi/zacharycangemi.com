@@ -2,7 +2,7 @@
 
 Source for [zacharycangemi.com](https://zacharycangemi.com) — Zachary Cangemi's personal portfolio site.
 
-A landing page for the rest of the work: projects, hardware builds, writing, and how to reach me.
+The landing page for **Project Arrival** — my pivot from Senior Data Scientist to AI Researcher. Links out to the work that proves it: shipped projects, the Owning Your Agent trilogy, hardware builds, writing, and how to reach me.
 
 - **Live site:** https://zacharycangemi.com
 - **Blog (separate):** https://blog.zacharycangemi.com
@@ -31,7 +31,8 @@ Vanilla HTML, CSS, and JavaScript. No build step, no framework, no bundler. Stat
 
 ## Featured projects (in portfolio.html order, newest first)
 
-- [`owning-your-agent`](https://github.com/zacangemi/owning-your-agent) — local agentic work with Hermes Agent on dual RTX 3090s (Qwen3.5-27B + GLM-4.7-Flash at 96K context).
+- [`owning-your-agent-pt-2`](https://github.com/zacangemi/owning-your-agent-pt-2) — Module 2 of the trilogy: pushing a single RTX 3090 to its limits with the same agentic stack. **Research in development.**
+- [`owning-your-agent`](https://github.com/zacangemi/owning-your-agent) — Module 1 (shipped): local agentic work with Hermes Agent on dual RTX 3090s (Qwen3.5-27B + GLM-4.7-Flash at 96K context). Companion to the [Module 1 blog post](https://blog.zacharycangemi.com/2026/05/20/owning-your-agent-part-1-local-agentic-work-with-hermes-on-dual-rtx-3090s/).
 - [`local-llm-infrastructure`](https://github.com/zacangemi/local-llm-infrastructure) — the dual RTX 3090 build that hosts the inference stack (48 GB VRAM).
 - [`melange`](https://github.com/zacangemi/melange) — Apple Silicon LLM memory profiler in Rust.
 - This repo ([`zacharycangemi.com`](https://github.com/zacangemi/zacharycangemi.com)) — the site itself.
@@ -56,4 +57,4 @@ MIT for the source code (HTML, CSS, JS). Image and surfboard graphic assets are 
 
 ## Contact
 
-[zacharycangemi.com/contact.html](https://zacharycangemi.com/contact.html) · [GitHub](https://github.com/zacangemi) · [LinkedIn](https://www.linkedin.com/in/zacharycangemi/)
+[zacharycangemi.com/contact.html](https://zacharycangemi.com/contact.html) · [GitHub](https://github.com/zacangemi) · [LinkedIn](https://www.linkedin.com/in/zachary-cangemi-0a08b4b1/)
