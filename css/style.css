@@ -324,7 +324,7 @@
 
     .blog__post {
         background-color: #f0f0f0;
-        border: 2px dashed black;
+        border: 2px dashed rgb(57, 179, 213);
         border-radius: 10px;
         padding: 20px;
         transition: transform 0.2s ease-in-out;
