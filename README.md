@@ -29,9 +29,10 @@ Vanilla HTML, CSS, and JavaScript. No build step, no framework, no bundler. Stat
 | `CNAME` | Custom-domain config for GitHub Pages |
 | `sitemap.xml`, `robots.txt` | SEO |
 
-## Featured projects (in portfolio.html order, newest first)
+## Featured projects (in portfolio.html order)
 
 - [`local-llm-infrastructure-v2`](https://github.com/zacangemi/local-llm-infrastructure-v2) — **Local LLM Infrastructure V2 — Dual RTX 3090 Threadripper Pro AI Server**: the 128 GB server rebuild designed for local inference research and ceiling-finding. **Build documentation in progress.**
+- [`local-llm-inference-lab`](https://github.com/zacangemi/local-llm-inference-lab) — **Local LLM Inference Lab — Benchmarking vLLM, llama.cpp & Agentic Workloads**: reproducible performance, context-scaling, multimodal, and agentic evaluation on the V2 server. **Research in progress.**
 - [`owning-your-agent-pt-2`](https://github.com/zacangemi/owning-your-agent-pt-2) — Module 2 of the trilogy: pushing a single RTX 3090 to its limits with the same agentic stack. **Research in development.**
 - [`owning-your-agent`](https://github.com/zacangemi/owning-your-agent) — Module 1 (shipped): local agentic work with Hermes Agent on dual RTX 3090s (Qwen3.5-27B + GLM-4.7-Flash at 96K context). Companion to the [Module 1 blog post](https://blog.zacharycangemi.com/2026/05/20/owning-your-agent-part-1-local-agentic-work-with-hermes-on-dual-rtx-3090s/).
 - [`local-llm-infrastructure`](https://github.com/zacangemi/local-llm-infrastructure) — the dual RTX 3090 build that hosts the inference stack (48 GB VRAM).
