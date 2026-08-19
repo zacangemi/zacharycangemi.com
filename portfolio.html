@@ -10,46 +10,164 @@
 	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 	<link rel = "stylesheet" href = "css/style.css" />
 	<link rel="icon" type= "image/gif" href="css/images/surfboards/surfer_mirrored.gif" />
-	<title>Portfolio | Zachary Cangemi</title>
+	<title>AI Engineering Portfolio | Zachary Cangemi</title>
 
-	<meta name="description" content="Portfolio — open-source AI projects by Zachary Cangemi: a dual RTX 3090 Threadripper Pro AI server, reproducible vLLM and llama.cpp inference research, the Owning Your Agent trilogy, and Melange." />
+	<meta name="description" content="Open-source AI engineering portfolio by Zachary Cangemi: local AI infrastructure, LLM inference benchmarks, agentic systems, and developer tools." />
 	<meta name="author" content="Zachary Cangemi" />
+	<meta name="robots" content="index, follow, max-image-preview:large" />
+	<meta name="theme-color" content="#39b3d5" />
 	<link rel="canonical" href="https://zacharycangemi.com/portfolio.html" />
+	<link rel="me" href="https://github.com/zacangemi" />
+	<link rel="me" href="https://www.linkedin.com/in/zachary-cangemi-0a08b4b1/" />
 
 	<!-- Open Graph -->
 	<meta property="og:type" content="website" />
-	<meta property="og:title" content="Portfolio | Zachary Cangemi" />
-	<meta property="og:description" content="Open-source AI projects: a dual RTX 3090 Threadripper Pro AI server, reproducible vLLM and llama.cpp inference research, the Owning Your Agent trilogy, and Melange." />
+	<meta property="og:title" content="AI Engineering Portfolio | Zachary Cangemi" />
+	<meta property="og:description" content="Open-source local AI infrastructure, LLM inference research, agentic systems, and developer tools—built, benchmarked, and documented in public." />
 	<meta property="og:url" content="https://zacharycangemi.com/portfolio.html" />
 	<meta property="og:site_name" content="Zachary Cangemi" />
+	<meta property="og:locale" content="en_US" />
+	<meta property="og:image" content="https://zacharycangemi.com/css/images/portfolio_images/portfolio-social-card.png" />
+	<meta property="og:image:secure_url" content="https://zacharycangemi.com/css/images/portfolio_images/portfolio-social-card.png" />
+	<meta property="og:image:type" content="image/png" />
+	<meta property="og:image:width" content="1200" />
+	<meta property="og:image:height" content="630" />
+	<meta property="og:image:alt" content="Zachary Cangemi AI engineering portfolio featuring local AI infrastructure, LLM inference research, and agentic systems" />
 
 	<!-- Twitter Card -->
-	<meta name="twitter:card" content="summary" />
-	<meta name="twitter:title" content="Portfolio — Local AI Tools & Infrastructure | Zachary Cangemi" />
-	<meta name="twitter:description" content="Open-source AI projects: a dual RTX 3090 Threadripper Pro AI server, reproducible vLLM and llama.cpp inference research, the Owning Your Agent trilogy, and Melange." />
+	<meta name="twitter:card" content="summary_large_image" />
+	<meta name="twitter:title" content="AI Engineering Portfolio | Zachary Cangemi" />
+	<meta name="twitter:description" content="Open-source local AI infrastructure, LLM inference research, agentic systems, and developer tools—built, benchmarked, and documented in public." />
+	<meta name="twitter:image" content="https://zacharycangemi.com/css/images/portfolio_images/portfolio-social-card.png" />
+	<meta name="twitter:image:alt" content="Zachary Cangemi AI engineering portfolio featuring local AI infrastructure, LLM inference research, and agentic systems" />
+
+	<script type="application/ld+json">
+	{
+	  "@context": "https://schema.org",
+	  "@graph": [
+	    {
+	      "@type": "Person",
+	      "@id": "https://zacharycangemi.com/#person",
+	      "name": "Zachary Cangemi",
+	      "url": "https://zacharycangemi.com/",
+	      "sameAs": [
+	        "https://github.com/zacangemi",
+	        "https://www.linkedin.com/in/zachary-cangemi-0a08b4b1/"
+	      ]
+	    },
+	    {
+	      "@type": "CollectionPage",
+	      "@id": "https://zacharycangemi.com/portfolio.html#page",
+	      "url": "https://zacharycangemi.com/portfolio.html",
+	      "name": "AI Engineering Portfolio | Zachary Cangemi",
+	      "description": "Open-source local AI infrastructure, LLM inference research, agentic systems, and developer tools.",
+	      "about": { "@id": "https://zacharycangemi.com/#person" },
+	      "mainEntity": {
+	        "@type": "ItemList",
+	        "numberOfItems": 7,
+	        "itemListElement": [
+	          {
+	            "@type": "ListItem",
+	            "position": 1,
+	            "item": {
+	              "@type": "CreativeWork",
+	              "name": "Owning Your Agent Part 2 — Local Agent with Hermes on a Single RTX 3090",
+	              "url": "https://github.com/zacangemi/owning-your-agent-pt-2"
+	            }
+	          },
+	          {
+	            "@type": "ListItem",
+	            "position": 2,
+	            "item": {
+	              "@type": "CreativeWork",
+	              "name": "Local LLM Inference Lab",
+	              "url": "https://github.com/zacangemi/local-llm-inference-lab"
+	            }
+	          },
+	          {
+	            "@type": "ListItem",
+	            "position": 3,
+	            "item": {
+	              "@type": "CreativeWork",
+	              "name": "Go Big or Go Home — Dual RTX 3090 Threadripper PRO Local AI Server",
+	              "url": "https://github.com/zacangemi/local-llm-infrastructure-v2",
+	              "subjectOf": {
+	                "@type": "BlogPosting",
+	                "headline": "My New AI Cluster: Go Big or Go Home, Part 1",
+	                "url": "https://blog.zacharycangemi.com/2026/08/18/my-new-ai-cluster-go-big-or-go-home-part-1/"
+	              }
+	            }
+	          },
+	          {
+	            "@type": "ListItem",
+	            "position": 4,
+	            "item": {
+	              "@type": "CreativeWork",
+	              "name": "Owning Your Agent Part 1 — Local Agent with Hermes on Dual RTX 3090s",
+	              "url": "https://github.com/zacangemi/owning-your-agent"
+	            }
+	          },
+	          {
+	            "@type": "ListItem",
+	            "position": 5,
+	            "item": {
+	              "@type": "CreativeWork",
+	              "name": "Local LLM Infrastructure — Dual RTX 3090 Cluster, 48 GB VRAM",
+	              "url": "https://github.com/zacangemi/local-llm-infrastructure"
+	            }
+	          },
+	          {
+	            "@type": "ListItem",
+	            "position": 6,
+	            "item": {
+	              "@type": "CreativeWork",
+	              "name": "Melange — Apple Silicon LLM Memory Profiler and KV Cache Analyzer",
+	              "url": "https://github.com/zacangemi/melange"
+	            }
+	          },
+	          {
+	            "@type": "ListItem",
+	            "position": 7,
+	            "item": {
+	              "@type": "WebSite",
+	              "name": "Zachary Cangemi Portfolio",
+	              "url": "https://zacharycangemi.com/"
+	            }
+	          }
+	        ]
+	      }
+	    }
+	  ]
+	}
+	</script>
 </head>
 <body>
     
-    <header><h1 class="portfolioHeader">Portfolio</h1></header>
+    <header><h1 class="portfolioHeader">AI Engineering Portfolio</h1></header>
 
     <nav aria-label="Main navigation">
 		<ul class="nav__list">
 			<li class="home"><a class="nav__links" href="index.html">Home</a></li>
-            <p aria-hidden="true">·</p>
+            <li class="nav__separator" aria-hidden="true">·</li>
             <li class="blog"><a class="nav__links" href="blog.html">Blog</a></li>
-			<p aria-hidden="true">·</p>
-            <li class="portfolio"><a class="nav__links" href="portfolio.html">Portfolio</a></li>
-			<p aria-hidden="true">·</p>
+            <li class="nav__separator" aria-hidden="true">·</li>
+			<li class="portfolio"><a class="nav__links" href="portfolio.html" aria-current="page">Portfolio</a></li>
+            <li class="nav__separator" aria-hidden="true">·</li>
             <li class="about"><a class="nav__links" href="about.html">About</a></li>
-			<p aria-hidden="true">·</p>
+            <li class="nav__separator" aria-hidden="true">·</li>
 			<li class="skills"><a class="nav__links" href="skills.html">Skills</a></li>
-	        <p aria-hidden="true">·</p>
+            <li class="nav__separator" aria-hidden="true">·</li>
             <li class="contact"><a class="nav__links" href="contact.html">Contact</a></li>
 		</ul>
 	</nav>
 
+    <p class="portfolio-intro">
+        Open-source local AI infrastructure, LLM inference research, agentic systems,
+        and developer tools—built, benchmarked, and documented in public.
+    </p>
+
     <div class="project__container">
-        <a class="card__link" href="https://github.com/zacangemi/owning-your-agent-pt-2" target="github_window">
+        <a class="card__link" href="https://github.com/zacangemi/owning-your-agent-pt-2" target="_blank" rel="noopener noreferrer">
             <article class="project__card">
                 <img class="project-card__image" src="css/images/portfolio_images/test_1.png" alt="Owning Your Agent Part 2 — local agent stack with Hermes on a single RTX 3090, pushing consumer hardware to its limits" />
                 <header class="project-card__meta">
@@ -63,7 +181,7 @@
             </article>
         </a>
 
-        <a class="card__link" href="https://github.com/zacangemi/local-llm-inference-lab" target="github_window">
+        <a class="card__link" href="https://github.com/zacangemi/local-llm-inference-lab" target="_blank" rel="noopener noreferrer">
             <article class="project__card">
                 <img class="project-card__image" src="css/images/portfolio_images/test_1.png" alt="Local LLM Inference Lab — reproducible vLLM, llama.cpp, multimodal, and agentic workload research on dual RTX 3090s" />
                 <header class="project-card__meta">
@@ -77,21 +195,21 @@
             </article>
         </a>
 
-        <a class="card__link" href="https://github.com/zacangemi/local-llm-infrastructure-v2" target="github_window">
+        <a class="card__link" href="https://github.com/zacangemi/local-llm-infrastructure-v2" target="_blank" rel="noopener noreferrer">
             <article class="project__card">
-                <img class="project-card__image" src="css/images/portfolio_images/test_1.png" alt="Local LLM Infrastructure V2 — dual RTX 3090 Threadripper Pro AI server with 128 GB RAM" />
+                <img class="project-card__image" src="css/images/portfolio_images/test_1.png" alt="Go Big or Go Home — dual RTX 3090 Threadripper PRO local AI server with 128 GB ECC memory" />
                 <header class="project-card__meta">
                     <ul class="categories">
-                        <li class="categories__tag">Infrastructure</li>
-                        <li class="categories__tag">Server</li>
-                        <li class="categories__tag">LLM</li>
+                        <li class="categories__tag">Local AI</li>
+                        <li class="categories__tag">Threadripper</li>
+                        <li class="categories__tag">Multi-GPU</li>
                     </ul>
-                    <h2 class="project-card__name">Local LLM Infrastructure V2 — Dual RTX 3090 Threadripper Pro AI Server</h2>
+                    <h2 class="project-card__name">Go Big or Go Home — Dual RTX 3090 Threadripper PRO Local AI Server</h2>
                 </header>
             </article>
         </a>
 
-        <a class="card__link" href="https://github.com/zacangemi/owning-your-agent" target="github_window">
+        <a class="card__link" href="https://github.com/zacangemi/owning-your-agent" target="_blank" rel="noopener noreferrer">
             <article class="project__card">
                 <img class="project-card__image" src="css/images/portfolio_images/test_1.png" alt="Owning Your Agent Part 1 — local agent stack with Hermes Agent + Qwen3.5-27B + GLM-4.7-Flash on dual RTX 3090s" />
                 <header class="project-card__meta">
@@ -105,7 +223,7 @@
             </article>
         </a>
 
-        <a class="card__link" href="https://github.com/zacangemi/local-llm-infrastructure" target="github_window">
+        <a class="card__link" href="https://github.com/zacangemi/local-llm-infrastructure" target="_blank" rel="noopener noreferrer">
             <article class="project__card">
                 <img class="project-card__image" src="css/images/portfolio_images/test_1.png" alt="Dual RTX 3090 local LLM infrastructure build with 48 GB VRAM" />
                 <header class="project-card__meta">
@@ -119,7 +237,7 @@
             </article>
         </a>
 
-        <a class="card__link" href="https://github.com/zacangemi/melange" target="github_window">
+        <a class="card__link" href="https://github.com/zacangemi/melange" target="_blank" rel="noopener noreferrer">
             <article class="project__card">
                 <img class="project-card__image" src="css/images/portfolio_images/test_1.png" alt="Melange — Apple Silicon LLM memory profiler and KV cache analyzer built in Rust" />
                 <header class="project-card__meta">
@@ -133,7 +251,7 @@
             </article>
         </a>
 
-        <a class="card__link" href="https://github.com/zacangemi/zacharycangemi.com" target="github_window">
+        <a class="card__link" href="https://github.com/zacangemi/zacharycangemi.com" target="_blank" rel="noopener noreferrer">
             <article class="project__card">
                 <img class="project-card__image" src="css/images/portfolio_images/test_1.png" alt="Personal portfolio website project — HTML, CSS, and JavaScript built by Zachary Cangemi" />
                 <header class="project-card__meta">

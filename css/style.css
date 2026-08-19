@@ -53,6 +53,12 @@
         transition: all .18s ease-in-out;
     }
 
+    .nav__separator {
+        font-family: 'VT323';
+        font-size: 24px;
+        pointer-events: none;
+    }
+
 
     .nav__list li:hover { 
         transform: translateY(-2.0px);
@@ -217,6 +223,17 @@
     }
 
     /* Portfolio Page */
+
+    .portfolio-intro {
+        max-width: 860px;
+        margin: 28px auto 0;
+        padding: 0 24px;
+        color: black;
+        font-family: 'VT323';
+        font-size: 24px;
+        line-height: 1.35;
+        text-align: center;
+    }
 
     .project__container {
         display: grid;
@@ -572,6 +589,13 @@
       
     /* portfolio mobile */
 
+    .portfolio-intro {
+        margin-top: 20px;
+        padding: 0 18px;
+        font-size: 20px;
+        line-height: 1.3;
+    }
+
     .project__container {
         grid-template-columns: 1fr;
         gap: 20px;
@@ -712,7 +736,13 @@
 @media screen and (min-width: 768px) and (max-width: 991px) {
 
     /* portfolio tablet */
-    
+
+    .portfolio-intro {
+        max-width: 720px;
+        padding: 0 24px;
+        font-size: 22px;
+    }
+
     .project__container {
         grid-template-columns: repeat(2, 1fr);
         gap: 25px;
