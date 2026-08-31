@@ -31,7 +31,7 @@ Vanilla HTML, CSS, and JavaScript. No build step, no framework, no bundler. Stat
 
 ## Featured projects (in portfolio.html order)
 
-- [`owning-your-agent-pt-2`](https://github.com/zacangemi/owning-your-agent-pt-2) — Module 2 of the trilogy: pushing a single RTX 3090 to its limits with the same agentic stack. **Research in development.**
+- [`owning-your-agent-part-2`](https://github.com/zacangemi/owning-your-agent-part-2) — Module 2: Qwen3.8-27B-FP8 inference research and a private Hermes/WHOOP morning agent on dual RTX 3090s. **Shipped.**
 - [`local-llm-inference-lab`](https://github.com/zacangemi/local-llm-inference-lab) — **Go Big or Go Home, Part 3 — The Inference Lab: Multi-Model Benchmarking with vLLM, llama.cpp, and Agentic Workflows**: reproducible performance, context-scaling, multimodal, and agentic evaluation on the V2 server. **Research in progress.**
 - [`local-llm-infrastructure-v2-commissioning`](https://github.com/zacangemi/local-llm-infrastructure-v2-commissioning) — **Go Big or Go Home, Part 2 — Commissioning the New Threadripper PRO AI Cluster**: evidence-led CPU, memory, GPU, VRAM, NCCL, thermal, networking, and recovery validation. **Publication in progress.**
 - [`local-llm-infrastructure-v2`](https://github.com/zacangemi/local-llm-infrastructure-v2) — **Go Big or Go Home, Part 1 — Dual RTX 3090 Threadripper PRO AI Cluster**: the published 128 GB server rebuild, including architecture, airflow, cost, assembly, and privacy-audited public documentation. [Read the Part 1 build article](https://blog.zacharycangemi.com/2026/08/18/my-new-ai-cluster-go-big-or-go-home-part-1/).
