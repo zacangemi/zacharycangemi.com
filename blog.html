@@ -87,9 +87,14 @@
             });
         }
         
-        // Function to strip HTML tags from content
+        // Function to strip HTML tags from content.
+        // The scratch element lives in an inert document (no browsing context),
+        // so the browser never tries to fetch the post's images, which the CSP
+        // would block and report as console errors. Parsing is otherwise the
+        // same as before, so the extracted text is identical.
+        const inertDoc = document.implementation.createHTMLDocument('');
         function stripHtml(html) {
-            const temp = document.createElement('div');
+            const temp = inertDoc.createElement('div');
             temp.innerHTML = html;
             return temp.textContent || temp.innerText || '';
         }
