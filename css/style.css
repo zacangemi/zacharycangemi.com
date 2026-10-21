@@ -177,6 +177,12 @@
         margin-bottom: 0;
     }
 
+    /* Body paragraphs read left-aligned; the opening quote stays centered. */
+    .about__container p:not(:first-of-type) {
+        text-align: left;
+        width: 100%;
+    }
+
 
     .social ul {
         display: flex;
