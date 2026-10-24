@@ -60,4 +60,4 @@ MIT for the source code (HTML, CSS, JS). Image and surfboard graphic assets are 
 
 ## Contact
 
-[zacharycangemi.com/contact.html](https://zacharycangemi.com/contact.html) · [GitHub](https://github.com/zacangemi) · [LinkedIn](https://www.linkedin.com/in/zachary-cangemi-0a08b4b1/)
+[zacharycangemi.com/contact.html](https://zacharycangemi.com/contact.html) · [GitHub](https://github.com/zacangemi) · [LinkedIn](https://www.linkedin.com/in/zacharycangemi/)
